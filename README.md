@@ -11,7 +11,10 @@
     - A unidade a qual deseja convertê-lo
 - O usuário recebe como saída um valor equivalente ao da entrada, na nova unidade especificada
 - O programa tem suporte pros seguintes tipos de unidades:
-    - TODO
+    - Temperaturas
+        - Celsius
+        - Fahrenheit
+        - Kelvin
 ## **Tecnologias Utilizadas**
 - Java (OpenJDK 21)
 - Apache Maven
