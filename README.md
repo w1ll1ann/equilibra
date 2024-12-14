@@ -17,4 +17,6 @@
         - Kelvin
 ## **Tecnologias Utilizadas**
 - Java (OpenJDK 21)
-- Apache Maven
+- Apache Maven 3.8.7
+- JUnit 5.11.0
+- Jacoco 0.8.12
