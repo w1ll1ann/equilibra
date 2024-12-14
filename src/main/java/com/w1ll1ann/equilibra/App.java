@@ -4,11 +4,6 @@ import com.w1ll1ann.equilibra.temperature.Celsius;
 import com.w1ll1ann.equilibra.temperature.Fahrenheit;
 import com.w1ll1ann.equilibra.temperature.Kelvin;
 
-import com.w1ll1ann.equilibra.numeric.Binary;
-import com.w1ll1ann.equilibra.numeric.Decimal;
-import com.w1ll1ann.equilibra.numeric.Hexadecimal;
-import com.w1ll1ann.equilibra.numeric.Octal;
-
 public class App {
 
     public static void printHelp() {
