@@ -11,7 +11,7 @@ public class CelsiusTest {
     public void testConversionToKelvin() {
 
         String expectedOutput = Celsius.ABSOLUTE_ZERO + " °C is equivalent to " + Kelvin.ABSOLUTE_ZERO + " K";
-        String actualOutput = Celsius.convert(Celsius.ABSOLUTE_ZERO, "--kelvin");
+        String actualOutput = Celsius.convert(Float.toString(Celsius.ABSOLUTE_ZERO), "--kelvin");
 
         assertEquals(expectedOutput, actualOutput);
     }
@@ -20,7 +20,7 @@ public class CelsiusTest {
     public void testConversionToFahrenheit() {
 
         String expectedOutput = Celsius.ABSOLUTE_ZERO + " °C is equivalent to " + Fahrenheit.ABSOLUTE_ZERO + " °F";
-        String actualOutput = Celsius.convert(Celsius.ABSOLUTE_ZERO, "--fahrenheit");
+        String actualOutput = Celsius.convert(Float.toString(Celsius.ABSOLUTE_ZERO), "--fahrenheit");
     
         assertEquals(expectedOutput, actualOutput);
     }
@@ -28,8 +28,8 @@ public class CelsiusTest {
     @Test
     public void testInvalidConversion() {
 
-        assertThrows(IllegalArgumentException.class, () -> Celsius.convert(Celsius.ABSOLUTE_ZERO - 1, "--kelvin"));
-        assertThrows(IllegalArgumentException.class, () -> Celsius.convert(Celsius.ABSOLUTE_ZERO - 1, "--fahrenheit"));
-        assertThrows(IllegalArgumentException.class, () -> Celsius.convert(0, "--null"));
+        assertThrows(IllegalArgumentException.class, () -> Celsius.convert(Float.toString(Celsius.ABSOLUTE_ZERO - 1), "--kelvin"));
+        assertThrows(IllegalArgumentException.class, () -> Celsius.convert(Float.toString(Celsius.ABSOLUTE_ZERO - 1), "--fahrenheit"));
+        assertThrows(IllegalArgumentException.class, () -> Celsius.convert("0", "--null"));
     }
 }

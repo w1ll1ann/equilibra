@@ -4,6 +4,11 @@ import com.w1ll1ann.equilibra.temperature.Celsius;
 import com.w1ll1ann.equilibra.temperature.Fahrenheit;
 import com.w1ll1ann.equilibra.temperature.Kelvin;
 
+import com.w1ll1ann.equilibra.numeric.Binary;
+import com.w1ll1ann.equilibra.numeric.Decimal;
+import com.w1ll1ann.equilibra.numeric.Hexadecimal;
+import com.w1ll1ann.equilibra.numeric.Octal;
+
 public class App {
 
     public static void printHelp() {
@@ -26,24 +31,18 @@ public class App {
             return;
         }
 
-        float inputValue = Float.parseFloat(args[0]);
-
-        String output;
-
         switch (args[1]) {
             case "--celsius":
-                output = Celsius.convert(inputValue, args[2]);
+                System.out.println(Celsius.convert(args[0], args[2]));
                 break;
             case "--fahrenheit":
-                output = Fahrenheit.convert(inputValue, args[2]);
+                System.out.println(Fahrenheit.convert(args[0], args[2]));
                 break;
             case "--kelvin":
-                output = Kelvin.convert(inputValue, args[2]);
+                System.out.println(Kelvin.convert(args[0], args[2]));
                 break;
             default:
                 throw new IllegalArgumentException("Unit type entered (" + args[2] + ") is not supported!");
         }
-
-        System.out.println(output);
     }
 }

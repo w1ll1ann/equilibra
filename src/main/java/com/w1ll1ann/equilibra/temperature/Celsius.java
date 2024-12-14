@@ -4,7 +4,9 @@ public class Celsius {
 
     public static float ABSOLUTE_ZERO = -273.15F;
 
-    static float toKelvin(float temperature) {
+    static float toKelvin(String inputValue) {
+
+        float temperature = Float.parseFloat(inputValue);
 
         if (temperature  < ABSOLUTE_ZERO)
             throw new IllegalArgumentException("Temperature entered is bellow absolute zero!");
@@ -12,7 +14,9 @@ public class Celsius {
         return temperature + 273.15F;
     }
 
-    static float toFahrenheit(float temperature) {
+    static float toFahrenheit(String inputValue) {
+
+        float temperature = Float.parseFloat(inputValue);
 
         if (temperature  < ABSOLUTE_ZERO)
             throw new IllegalArgumentException("Temperature entered is bellow absolute zero!");
@@ -20,7 +24,7 @@ public class Celsius {
         return temperature * 1.8F + 32;
     }
 
-    public static String convert(float inputValue, String conversionUnit) {
+    public static String convert(String inputValue, String conversionUnit) {
 
         String outputValue;
 
@@ -35,6 +39,6 @@ public class Celsius {
                 throw new IllegalArgumentException("Unit type entered (" + conversionUnit + ") is incompatible with --celsius");
         }
 
-        return Float.toString(inputValue) + " °C is equivalent to " + outputValue;
+        return inputValue + " °C is equivalent to " + outputValue;
     }
 }
