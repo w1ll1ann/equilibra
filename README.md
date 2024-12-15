@@ -17,7 +17,7 @@ $ mvn package
 ```
 - Exemplo de execução:
 ```
-$ java -jar target/equilibra-0.2.0.jar 11111111 --binary --decimal
+$ java -jar target/equilibra-0.4.0.jar 11111111 --binary --decimal
 ```
 - Saida da execução do exemplo anterior:
 ```
