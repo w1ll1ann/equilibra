@@ -21,7 +21,7 @@ $ java -jar target/equilibra-0.2.0.jar 11111111 --binary --decimal
 ```
 - Saida da execução do exemplo anterior:
 ```
-> Equilibra 0.2.0
+> Equilibra 0.4.0
 > 11111111 base 2 is equivalent to 255 base 10
 ```
 - A execução do programa sem parâmetros adicionais (no exemplo: 11111111 --binary --decimal) resulta na listagem de todos os parâmetros disponiveis para uma chamada do equilibra
