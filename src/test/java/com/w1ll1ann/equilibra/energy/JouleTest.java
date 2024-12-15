@@ -11,7 +11,7 @@ public class JouleTest {
     public void testConversionToCalorie() {
 
         String expectedOutput = "1 J is equivalent to 0.24 Cal";
-        String actualOutput = Joule.convert("1", "--joule");
+        String actualOutput = Joule.convert("1", "--calorie");
 
         assertEquals(expectedOutput, actualOutput);
     }
