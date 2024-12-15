@@ -30,10 +30,9 @@ jobs:
     - name: Build with Maven
       run: mvn clean jacoco:prepare-agent package jacoco:report
     - name: Upload coverage to Codecov
-    - name: Upload coverage reports to Codecov
       uses: codecov/codecov-action@v5
-      with:
-        token: ${{ secrets.CODECOV_TOKEN }}
+      env:
+        CODECOV_TOKEN: ${{ secrets.CODECOV_ORG_TOKEN }}
         
     #  Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
     #- name: Update dependency graph
