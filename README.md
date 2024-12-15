@@ -8,13 +8,33 @@
 - O usuário interage com o sistema oferecendo como entrada:
     - Um valor
     - Sua unidade original
-    - A unidade a qual deseja convertê-lo
+    - A unidade a qual deseja convertê-lo (da mesma categoria da unidade original)
 - O usuário recebe como saída um valor equivalente ao da entrada, na nova unidade especificada
+
+- Comando para construir um arquivo JAR executável
+```
+$ mvn package
+```
+- Exemplo de execução:
+```
+$ java -jar target/equilibra-0.2.0.jar 11111111 --binary --decimal
+```
+- Saida da execução do exemplo anterior:
+```
+> Equilibra 0.2.0
+> 11111111 base 2 is equivalent to 255 base 10
+```
+- A execução do programa sem parâmetros adicionais (no exemplo: 11111111 --binary --decimal) resulta na listagem de todos os parâmetros disponiveis para uma chamada do equilibra
 - O programa tem suporte pros seguintes tipos de unidades:
     - Temperaturas
         - Celsius
         - Fahrenheit
         - Kelvin
+    - Numéricas
+        - Binário
+        - Decimal
+        - Hexadecimal
+        - Octal
 ## **Tecnologias Utilizadas**
 - Java (OpenJDK 21)
 - Apache Maven 3.8.7
