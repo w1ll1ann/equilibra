@@ -1,19 +1,9 @@
 package com.w1ll1ann.equilibra;
 
-import com.w1ll1ann.equilibra.energy.Calorie;
-import com.w1ll1ann.equilibra.energy.Joule;
-
-import com.w1ll1ann.equilibra.numeric.Binary;
-import com.w1ll1ann.equilibra.numeric.Decimal;
-import com.w1ll1ann.equilibra.numeric.Hexadecimal;
-import com.w1ll1ann.equilibra.numeric.Octal;
-
-import com.w1ll1ann.equilibra.speed.MeterSecond;
-import com.w1ll1ann.equilibra.speed.KilometerHour;
-
-import com.w1ll1ann.equilibra.temperature.Celsius;
-import com.w1ll1ann.equilibra.temperature.Fahrenheit;
-import com.w1ll1ann.equilibra.temperature.Kelvin;
+import com.w1ll1ann.equilibra.energy.*;
+import com.w1ll1ann.equilibra.numeric.*;
+import com.w1ll1ann.equilibra.speed.*;
+import com.w1ll1ann.equilibra.temperature.*;
 
 public class App {
 
