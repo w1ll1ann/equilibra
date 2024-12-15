@@ -26,7 +26,7 @@ $ java -jar target/equilibra-0.2.0.jar 11111111 --binary --decimal
 ```
 - A execução do programa sem parâmetros adicionais (no exemplo: 11111111 --binary --decimal) resulta na listagem de todos os parâmetros disponiveis para uma chamada do equilibra
 - O programa tem suporte pros seguintes tipos de unidades:
-    - Energia
+    - Energias
         - Caloria
         - Joule
     - Numéricas
@@ -38,6 +38,9 @@ $ java -jar target/equilibra-0.2.0.jar 11111111 --binary --decimal
         - Celsius
         - Fahrenheit
         - Kelvin
+    - Velocidades
+        - Metros / Segundo
+        - Quilometros / Hora
 ## **Tecnologias Utilizadas**
 - Java (OpenJDK 21)
 - Apache Maven 3.8.7
