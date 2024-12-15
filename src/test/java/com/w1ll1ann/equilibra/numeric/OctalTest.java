@@ -12,7 +12,7 @@ public class OctalTest {
     @Test
     public void testConversionToDecimal() {
 
-        String expectedOutput = "377 base 8 is equivalent to 255 base 10";
+        String expectedOutput = "0377 base 8 is equivalent to 255 base 10";
         String actualOutput = Octal.convert(testedNumber, "--decimal");
 
         assertEquals(expectedOutput, actualOutput);
@@ -21,7 +21,7 @@ public class OctalTest {
     @Test
     public void testConversionToHexadecimal() {
 
-        String expectedOutput = "377 base 8 is equivalent to FF base 16";
+        String expectedOutput = "0377 base 8 is equivalent to ff base 16";
         String actualOutput = Octal.convert(testedNumber, "--hexadecimal");
 
         assertEquals(expectedOutput, actualOutput);
@@ -30,7 +30,7 @@ public class OctalTest {
     @Test
     public void testConversionToBinary() {
 
-        String expectedOutput = "377 base 8 is equivalent to 11111111 base 2";
+        String expectedOutput = "0377 base 8 is equivalent to 11111111 base 2";
         String actualOutput = Octal.convert(testedNumber, "--binary");
 
         assertEquals(expectedOutput, actualOutput);

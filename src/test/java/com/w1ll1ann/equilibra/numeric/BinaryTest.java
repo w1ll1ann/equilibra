@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 public class BinaryTest {
 
-    private String testedNumber = "0b11111111";
+    private String testedNumber = "11111111";
 
     @Test
     public void testConversionToDecimal() {
@@ -21,7 +21,7 @@ public class BinaryTest {
     @Test
     public void testConversionToHexadecimal() {
 
-        String expectedOutput = "11111111 base 2 is equivalent to FF base 16";
+        String expectedOutput = "11111111 base 2 is equivalent to ff base 16";
         String actualOutput = Binary.convert(testedNumber, "--hexadecimal");
 
         assertEquals(expectedOutput, actualOutput);

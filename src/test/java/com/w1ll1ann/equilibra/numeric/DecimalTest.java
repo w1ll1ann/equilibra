@@ -12,7 +12,7 @@ public class DecimalTest {
     @Test
     public void testConversionToHexadecimal() {
 
-        String expectedOutput = "255 base 10 is equivalent to FF base 16";
+        String expectedOutput = "255 base 10 is equivalent to ff base 16";
         String actualOutput = Decimal.convert(testedNumber, "--hexadecimal");
 
         assertEquals(expectedOutput, actualOutput);
