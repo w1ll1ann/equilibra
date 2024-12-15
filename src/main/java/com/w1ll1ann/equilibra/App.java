@@ -8,6 +8,9 @@ import com.w1ll1ann.equilibra.numeric.Decimal;
 import com.w1ll1ann.equilibra.numeric.Hexadecimal;
 import com.w1ll1ann.equilibra.numeric.Octal;
 
+import com.w1ll1ann.equilibra.speed.MeterSecond;
+import com.w1ll1ann.equilibra.speed.KilometerHour;
+
 import com.w1ll1ann.equilibra.temperature.Celsius;
 import com.w1ll1ann.equilibra.temperature.Fahrenheit;
 import com.w1ll1ann.equilibra.temperature.Kelvin;
@@ -27,6 +30,9 @@ public class App {
         System.out.println("        --decimal");
         System.out.println("        --hexadecimal");
         System.out.println("        --octal");
+        System.out.println("    Speed:");
+        System.out.println("        --kilometerhour");
+        System.out.println("        --metersecond");
         System.out.println("    Temperature:");
         System.out.println("        --celsius");
         System.out.println("        --fahrenheit");
@@ -35,7 +41,7 @@ public class App {
 
     public static void main(String[] args) {
 
-        System.out.println("Equilibra 0.3.0");
+        System.out.println("Equilibra 0.4.0");
 
         if (args.length != 3) {
             printHelp();
@@ -60,6 +66,12 @@ public class App {
                 break;
             case "--octal":
                 System.out.println(Octal.convert(args[0], args[2]));
+                break;
+            case "--kilometerhour":
+                System.out.println(KilometerHour.convert(args[0], args[2]));
+                break;
+            case "--metersecond":
+                System.out.println(MeterSecond.convert(args[0], args[2]));
                 break;
             case "--celsius":
                 System.out.println(Celsius.convert(args[0], args[2]));
