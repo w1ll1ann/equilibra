@@ -35,4 +35,9 @@ public class BinaryTest {
 
         assertEquals(expectedOutput, actualOutput);
     }
+
+    @Test
+    public void testInvalidConversion() {
+        assertThrows(IllegalArgumentException.class, () -> Binary.convert("0", "--null"));
+    }
 }

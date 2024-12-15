@@ -35,4 +35,9 @@ public class OctalTest {
 
         assertEquals(expectedOutput, actualOutput);
     }
+
+    @Test
+    public void testInvalidConversion() {
+        assertThrows(IllegalArgumentException.class, () -> Octal.convert("0", "--null"));
+    }
 }

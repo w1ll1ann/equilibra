@@ -35,4 +35,9 @@ public class DecimalTest {
 
         assertEquals(expectedOutput, actualOutput);
     }
+
+    @Test
+    public void testInvalidConversion() {
+        assertThrows(IllegalArgumentException.class, () -> Decimal.convert("0", "--null"));
+    }
 }
