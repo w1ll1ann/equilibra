@@ -3,6 +3,8 @@ package com.w1ll1ann.equilibra.energy;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
+import org.junit.jupiter.api.Test;
+
 public class CalorieTest {
 
     @Test
